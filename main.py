@@ -107,8 +107,7 @@ def find_all():
     list_files.delete(0, list_files.size()-1)
     for i in files:
         list_files.insert(END, assemble(i[0], i[1], 100))
-    if len(files)==0:
-        showinfo(title="Информация", message="Похожих изображений не найдено!")
+    showinfo(title="Информация", message="{} изображений найдено!".format(len(files)))
 btn_bfolder.config(command=get_folder)
 btn_btarget.config(command=get_target)
 btn_scan.config(command=find_all)

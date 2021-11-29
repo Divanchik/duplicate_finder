@@ -74,8 +74,8 @@ class scanner:
             self.info = scan_rec(self.folder, self.format)
         else:
             self.info = scan(self.folder, self.format)
-        for i in self.info.keys():
-            print(i)
+        # for i in self.info.keys():
+        #     print(i)
     
     def calc(self, func):
         for name, info in self.info.items():
